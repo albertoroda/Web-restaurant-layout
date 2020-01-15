@@ -1,0 +1,384 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:400,700&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Handlee', cursive;
+color rojo: #fa573a;
+color azul: #21242e; 
+*/
+
+/*INICIO HEADER*/
+/*Es el encorsetamiento de la página, donde va a ir el contenido*/
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+/*Es el 100% de la vista de la página*/
+.container-fluid{
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+/*Establece una barrera para los elementos flotantes, no se salgan de sus margenes, ni los otros elementos, se metan debajo de los flotantes, impidiendo su vista. Es como un escudo/limite */
+.row:after{
+    clear: both;
+    content: "";
+    height: 0;
+    display: block;
+}
+
+/* Pone estilo al banner superior*/
+header .nav_top{
+    background-color: #21242e; 
+    color: white;
+    padding: 20px 0px;
+}
+
+/*flota los elementos del banner superior*/
+header .nav_top .container div{
+    float: left;
+    width: 25%;
+}
+
+/*Da estilo a los a del banner sup*/
+header .nav_top a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+/*Oculta los a del banner sup, para que en ela versión movil no se vean*/
+header .nav_top a span{
+    display: none;
+}
+
+/* Pone los iconos del banner en rojo*/
+header .nav_top a i{
+    color: #fa573a;
+}
+
+/* Alinea los dos últimos iconos del banner sup a la dcha*/
+header .nav_top .container div:nth-child(3), header .nav_top .container div:last-child{
+    text-align: right;
+} 
+
+/*INICIO NAV*/
+header nav{
+    padding: 20px 3%;
+}
+
+/*Sitúa la hamburguesa a la dcha*/
+header .hamburguesa{
+    cursor: pointer;
+    float: right;
+}
+
+/*PINTA LAS RAYAS DE LA HAMBURGUESA*/
+header .hamburguesa div{
+    border-top: 2px solid #aaa;
+    width: 30px;
+    margin-bottom: 10px;
+    
+}
+
+/*Situa el logo*/
+header nav .logo{
+    float: left;
+    width: 100px;
+}
+
+/*Espaciado padding del menu con el encabezado*/
+header nav .menu{
+    padding-top: 60px;
+}
+
+/*Hace la rayita del menú de items*/
+header nav .menu li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+/* Quita la última ralla del menú*/
+header nav .menu li:last-child{
+    border: 0px;
+}
+/*Establece estilo en el menu de navegacion y lo combierte en bloque*/
+header nav .menu li a{
+    color: #aaa;
+    text-decoration: none;
+    display: block; /* Hace que el boton sea clickable y no solo el link del texto*/
+}
+
+/*Pone en rojo el boton activo*/
+header nav .menu li a.activo{
+    color: #fa573a;
+}
+/*Cambio de color al pasar el puntero*/
+header nav .menu li a:hover{
+    color: #fa573a;
+}
+
+/*INICIO HEROE*/
+
+.hero{
+    background-image: url('../img/fondo.jpg');
+    height: 37em;
+    background-size: cover;
+    background-position: center center;
+    background-color: #777;
+    background-blend-mode: multiply;
+}
+
+.hero>div{
+    color: white;
+    padding: 15% 3%;
+}
+
+.hero h1{
+    font-size: 2.5em;
+    font-family: 'Handlee';
+}
+.hero h2{
+    color: #fa573a;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.hero p{
+    font-size: 1.15em;
+}
+/*Estilo del boton*/
+.boton{
+    background-color: #fa573a;
+    display: inline-block;
+    padding: 1em;
+    margin: 1em 0;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #fa573a;
+    transition: 0.3s;
+}
+
+/*Hace el boton transparente al situar el cursor encima*/
+.boton:hover{
+    background-color: transparent;
+    color: #fa573a;
+}
+
+/*Mueve la flecha*/
+.boton:hover i{
+    transform: translate(8px);
+    transition: transform 1s;
+}
+
+/*Situamos los iconos sociales en linea*/
+.hero .social li{
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 1em;
+}
+
+.hero .social li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+section.container{
+    padding: 50px 3%;
+}
+
+main section h2{
+    color: black;
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+main section h2 span{
+    color:#fa573a;
+}
+
+/*Divisor con la x en medio*/
+main section .underline{
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+main section .underline hr{
+    border-color: #fa573a;
+    position: absolute;
+    width: 100%;
+    top: -1.8px;
+}
+main section .underline span{
+color: #fa573a;
+display: block;
+text-align: center;
+font-weight: bold;
+}
+
+main section .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+main section .flex article{
+    width: 100%;
+    padding: 1.825em 0;
+    border-bottom: 1px solid #aaa;
+}
+main section .flex article:last-child{
+    border-bottom: 0px;
+}
+main section article div i{
+    color: #fa573a;
+    font-size: 1.5em;
+    padding: .2em;
+    border: 1px solid #fa573a;
+}
+main section article div .fa-truck{
+    transform: rotateY(180deg);
+}
+main section h3{
+    font-size: 1em;
+    font-weight: 700;
+    margin:1em 0;
+}
+main section article p{
+    color: #aaa;
+   
+}
+
+main section article .enlace{
+    color: #fa573a;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1em;
+}
+main section article .enlace:hover i{
+    transform: translate(15px);
+    transition: 1s;
+}
+
+main section .columna{
+    width: 100%;
+    padding: 1.25em 0;
+}
+main section .imagen{
+    width: 85%;
+    margin: 0 auto;
+}
+main section .imagen .marco{
+    border: 3px solid #fa573a;
+    background-color: transparent;
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main section .imagen .marco img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+main section .imagen:hover .marco, main section .imagen:hover img{
+    transform: rotateZ(0deg);
+}
+main section .columna h4{
+    color: #fa573a; 
+}
+main section .columna p{
+    color: #aaa; 
+    margin: 1em 0;
+}
+
+footer{
+    background-color:#21242e; 
+    padding: 10px 0;
+}
+footer .container{
+    color: white;
+    text-align: center;
+}
+footer .container a{
+text-decoration: none;
+color: white;
+}
+
+/*MEDIA QUERIS*/
+
+@media(min-width: 769px)
+{
+header .nav_top a span{
+    display: inline;
+    font-size: 60%;
+}
+main section .flex article{
+    width: 50%;
+    padding: 1.825em 1em;
+    border-bottom: 0px;
+    border-left: 1px solid #aaa;
+    margin-bottom: 5px;
+}
+main section .flex article:last-child{
+    width: 100%;
+
+}
+
+main section .underline{
+    margin-bottom: 2em;
+}
+}
+@media(min-width: 1004px)
+{
+    header .hamburguesa{
+    display: none;
+    float: none;
+    }
+    header nav .menu{
+    padding-top: 0px;
+    float: right;
+    }
+header nav .menu li{
+    padding: .5em 20px;
+    text-align: left;
+    border-bottom: 0px;
+    display: inline-block;
+}
+header nav .menu li:last-child{
+    padding-right: 0px;
+}
+
+main section .columna{
+    width: 50%;
+    padding: 1.25em 1em;
+}
+}
+
+@media(min-width: 1200px)
+{
+
+main section .flex article{
+    width: 33.33%;
+}
+main section .flex article:last-child{
+    width: 33.33%;
+}
+
+.hero>div{
+    color: white;
+    padding: 7% 3%;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+}
