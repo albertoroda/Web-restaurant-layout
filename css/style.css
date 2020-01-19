@@ -361,6 +361,78 @@ main section .flex .blog a:hover i{
     transition: 1s;
 }
 
+/*MENU*/
+.menu_wraped{
+    background-color: black;
+}
+.menu_wraped h2{
+    color: white;
+}
+.menu_wraped h3{
+color: white;
+font-size: 1em;
+font-weight: 700;
+}
+
+.menu_wraped p{
+    color: #aaa;
+}
+
+.menu_wraped h4{
+    color: #fa573a;
+    font-weight: 700;
+}
+
+.menu_wraped .container .menu_botones{
+    margin-top: 2em;
+}
+
+.menu_wraped .container .menu_botones .menu li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1em 1em;
+}
+
+.menu_wraped .container .menu_botones .menu li .activo{
+    background-color: #fa573a;
+}
+
+.menu_wraped .container .menu_botones .menu li a:hover{
+background-color: #fa573a;
+}
+.menu_wraped .hot_offers{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.menu_wraped .hot_offers .linea{
+    width: 100px;  
+}
+.menu_wraped .hot_offers .linea hr{
+    border-color: #fa573a;
+    width: 100%;
+}
+
+.menu_wraped .container .comida .producto .descripcion{
+    display: inline-block;
+    width: 80%;
+    
+}
+.menu_wraped .container .comida .producto .precio_articulo{
+    display: inline-block;
+    width: 10%;
+    height: auto;
+    position: absolute;
+    margin-top: 1em;
+    
+    
+}
+
+
+
+
+
+
 
 
 /*MEDIA QUERIS*/
