@@ -354,8 +354,12 @@ main section .flex .blog a{
 }
 main section .flex .blog i{
     border: 0px;
+    transition: 1seg;
 }
-
+main section .flex .blog a:hover i{
+     transform: translate(15px);
+    transition: 1s;
+}
 
 
 
@@ -382,6 +386,19 @@ main section .flex article:last-child{
 main section .underline{
     margin-bottom: 2em;
 }
+main section .flex .blog{
+width: 20%;
+border-left: 0px;
+}
+main section .flex .blog:last-child{
+    width: 20%;
+
+}
+
+
+
+
+
 }
 @media(min-width: 1004px)
 {
@@ -425,5 +442,7 @@ main section .flex article:last-child{
     width: 1100px;
     margin: 0 auto;
 }
+
+
 
 }
