@@ -415,17 +415,43 @@ background-color: #fa573a;
 
 .menu_wraped .container .comida .producto .descripcion{
     display: inline-block;
-    width: 80%;
+    width: 80%;    
+    margin-bottom: 2em;
+}
+.menu_wraped .container .comida .producto .descripcion a{
+    text-decoration: none;   
+    color: #fa573a;
+    font-weight: 700;
+}
+.menu_wraped .container .comida .producto .descripcion a i{
+    border: 0px;
     
 }
+.menu_wraped .container .comida .producto .descripcion a:hover i{
+    transform: translate(15px);
+    transition: 1s;
+}
+
 .menu_wraped .container .comida .producto .precio_articulo{
     display: inline-block;
     width: 10%;
     height: auto;
     position: absolute;
     margin-top: 1em;
-    
-    
+}
+.menu_wraped .flecha{
+    position: fixed;
+     bottom: 0;
+    right: 0;
+    background-color: #fa573a;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: 4px 4px;
+}
+.menu_wraped .flecha a i{
+    margin: 0 auto;
+    color: white;
 }
 
 
