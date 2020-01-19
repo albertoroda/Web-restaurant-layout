@@ -315,6 +315,46 @@ color: white;
 }
 
 
+/*BLOG*/
+main section .flex .blog{
+    width: 40%;
+    padding: 0em 0em;
+    border-bottom: 0px solid #aaa;
+    position: relative;
+    margin: 5%;
+
+   
+}
+main section .flex .blog .imagen_blog{   
+     width: 100%;
+     height: auto;
+     
+}
+main section .flex .blog .fecha_blog{
+background-color: #fa573a;
+position: absolute;
+width: 30%;
+height: 17%;
+top: 0%;
+right:70%;
+text-align: center;
+color: white;
+opacity: 85%;
+margin: 0 auto;
+}
+main section .flex .blog h4{
+font-size: 1em;
+color: #fa573a;
+margin-bottom: 1em;
+}
+
+main section .flex .blog a{
+    text-decoration: none;
+    color: #fa573a;
+}
+main section .flex .blog i{
+    border: 0px;
+}
 
 
 
